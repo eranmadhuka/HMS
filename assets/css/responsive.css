@@ -1,0 +1,358 @@
+/* Extra Extra large devices */
+@media screen and (min-width: 1400px) {
+    .container  {
+       max-width: 1320px;
+    }
+}
+
+/* Large devices (Laptops) */
+@media screen and (min-width: 1025px) and (max-width: 1429px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* About Section */
+    .about .about-img .dr-name {
+        left: 200px;
+    }
+
+    /* Blog Post */ 
+    .blog-post .post {
+        width: 100%;
+    }
+}
+
+/* Learge devices (tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    
+    /* Hero Section */
+    .hero-img img {
+        width: 350px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    /* About Section */
+    .about .about-img img {
+        width: 450px;
+        height: auto;
+    }
+
+    .about .row {
+        flex-direction: column-reverse;
+    }
+
+    .about .about-img .dr-name {
+        left: 200px;
+    }
+
+    /* How Section */
+    .how .circle {
+        padding: 40px;
+    }
+
+    /* Footer */
+    footer .grid {
+        grid-gap: 40px;
+    }
+
+    /* Testimonial Section */
+    .tesrimonial .sec-heading {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .tesrimonial-wrapper {
+        width: 100%;
+    }
+
+    /* Contact Section */
+    .contact .form-style {
+        width: 90%;
+    }
+
+    .contact .form-style .row {
+        justify-content: space-between;
+    }
+
+    .contact .form-style .field-split {
+        width: 49%;
+    }
+
+    .contact .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+
+    /* Login Page */
+    .signup .login-wrapper {
+        width: 100%;
+    }
+
+    /* Register Page */
+    .login-wrapper {
+        width: 100%;
+    }
+
+    .form-style .field-split {
+        width: 49%;
+    }
+
+    .form-style .row {
+        justify-content: space-between;
+    }
+
+    .form-style .terms .row {
+        justify-content: flex-start;
+    }
+
+    /* Blog Post */ 
+    .blog-post .post {
+        width: 100%;
+    }
+
+    /* Doctors */
+    .doctor .dr-card-row {
+        display: inline;
+    }
+}
+
+/* Medium devices (phones) */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        place-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .sec-heading {
+        width: 100%;
+    }
+
+    
+    /* Navbar */
+    nav .container {
+        padding: 30px;
+    }
+
+    .navbar {
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.2);
+        padding: 80px 0 0 10px;
+        transition: all .5s;
+        background: #fff;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    .navbar li {
+        margin-bottom: 30px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 60px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    .mobile-nav-logo {
+        display: block;
+        margin: 0 0 20px 10px;
+    }
+
+
+    /* Hero */
+    .hero {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    /* About Section */
+    .about .about-img img {
+        width: 400px;
+        height: auto;
+    }
+
+    .about .row {
+        flex-direction: column-reverse;
+    }
+
+    .about .about-img {
+        flex-direction: column-reverse;
+    }
+
+    .about .about-img .dr-name {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .about .about-text {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    /* How Section */
+    .how .how-card {
+        margin: 20px;
+    }
+
+    .how .circle {
+        padding: 40px;
+    }
+
+    /* Footer */
+    footer .grid {
+        place-items: center stretch;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    /* Testimonial Section */
+    .tesrimonial .sec-heading {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .tesrimonial-wrapper {
+        width: 100%;
+    }
+
+     /* Contact Section */
+    .contact .form-style {
+        width: 100%;
+    }
+
+    .contact .form-style .field-split {
+        width: 100%;
+    }
+
+    /* Blog Page */
+    .blog .card {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    /* Login Page */
+    .signup .login-wrapper {
+        width: 100%;
+    }
+
+    /* Register Page */
+    .login-wrapper {
+        width: 100%;
+    }
+
+    .form-style .field-split {
+        width: 100%;
+    }
+
+    .form-style .terms  .row {
+        flex-direction: row;
+    }
+
+    /* Blog Post */ 
+    .blog-post .post {
+        width: 100%;
+    }
+
+    .blog-post .list-inline {
+        flex-direction: column;
+    }
+
+    .blog-post .blog-post-content .list-inline, .list-inline-item {
+        align-items: flex-start;
+    }
+
+    /* Doctors */
+    .doctor .dr-card-row {
+        display: inline;
+    }
+
+    /* Doctor Profile */
+    .doctor-profile .dr-card-row {
+        display: inline;
+    }
+
+    .doctor-profile .card .doc-details {
+        width: 100%;
+    }
+
+    .tabs-bar {
+        display: inline;
+        position: relative;
+    }
+
+}
+
+ 

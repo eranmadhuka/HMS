@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Main CSS File -->
+    <!-- <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">  -->
+
+    <!-- Admin CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fontawsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Grid Container -->
+    <div class="grid-container">
+        <header class="header">
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header_logo">
+                <img src="../assets/images/logo1.png" alt="">
+            </div>
+            <div class="header_avatar subnav">
+                <div class="subnav-btn">
+                    <img src="../assets/images/avatar/avatar-4.jpg" alt="">
+                    <h5>Avatar</h5>
+                </div>
+                <ul class="subnav-content">
+                    <li><a href="#"><i class="fa-solid fa-user"></i>My Profile</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i>Setting</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i>My Profile</a></li>
+                    <hr />
+                    <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Log Out</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <aside class="sidenav">
+            <div class="sidenav-close-icon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <!-- Side Navigation -->
+            <div class="user-info">
+                <div class="user-info-bg">
+                    <img src="../assets/images/dash-bg.jpg" alt="">
+                </div>
+                <div class="user-info-box">
+                    <div class="user-info-pic">
+                        <img src="../assets/images/avatar/avatar-4.jpg" alt="">
+                    </div>
+                    <div class="user-info-title">
+                        <h3>Eran</h3>
+                        <span>Administrator</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="sidenav-list">
+                <li class="sidenav-item">
+                    <a href="dashboard.html" class="nav-links">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="sidenav-item">
+                    <div class="nav-links dropdown active">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Appointment 
+                        <i class="fa-solid fa-caret-right down-icon"></i>
+                    </div>
+                    <ul class="dropdown-list">
+                        <li><a href="appointment.html" class="active">View All Appointment</a></li>
+                        <li><a href="appointment-book.html">Book Appointment</a></li>
+                        <li><a href="appointment-edit.html">Edit Appointment</a></li>
+                    </ul>
+                </li>
+                <li class="sidenav-item">
+                    <div class="nav-links dropdown">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        Doctors 
+                        <i class="fa-solid fa-caret-right down-icon"></i>
+                    </div>
+         
+                    <ul class="dropdown-list">
+                        <li><a href="doctors.html">All Doctors</a></li>
+                        <li><a href="doctor-add.html">Add Doctort</a></li>
+                        <li><a href="doctor-edit.html">Edit Doctor</a></li>
+                    </ul>
+                </li>
+                <li class="sidenav-item">
+                    <div class="nav-links dropdown">
+                        <i class="fa-solid fa-hospital-user"></i>
+                        Patients 
+                        <i class="fa-solid fa-caret-right down-icon"></i>
+                    </div>
+                    <ul class="dropdown-list">
+                        <li><a href="patients.html">All Patients</a></li>
+                        <li><a href="patients-edit.html">Add Patients</a></li>
+                        <li><a href="patients-edit.html">Edit Patients</a></li>
+                    </ul>
+                </li>
+                <li class="sidenav-item">
+                    <div class="nav-links dropdown">
+                        <i class="fa-solid fa-users-gear"></i>
+                        Other Staf 
+                        <i class="fa-solid fa-caret-right down-icon"></i>
+                    </div>
+                    <ul class="dropdown-list">
+                        <li><a href="staff.html">All Staf</a></li>
+                        <li><a href="staff-add.html">Add Staf</a></li>
+                        <li><a href="staff-add.html">Edit Staf</a></li>
+                    </ul>
+                </li>
+                <li class="sidenav-item">
+                    <a href="profile.html" class="nav-links">
+                        <i class="fa-solid fa-user-gear"></i>
+                        Profile Setting
+                    </a>
+                </li>
+                <li class="sidenav-item logout">
+                    <a href="#" class="nav-links">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Log Out
+                    </a>
+                </li>
+            </ul>
+
+        </aside>
+
+        <main class="main">
+            <h2>Doctor List</h2>
+            <div class="main-bottom-card">
+               
+                <div class="card">
+                    <div class="card-title">
+                        <div class="search-box">
+                            <input type="text" id="myInput" onkeyup="seacrFunction()" placeholder="Search...">
+                        </div>
+                        <a href="doctor-add.html" class="main-btn">Add New +</a>
+                    </div>
+                    <table class="table" id="table">
+                        <thead class="table-head">Consulting Doctor
+                            <tr>
+                                <th>ID</th>
+                                <th>Patient Name</th>
+                                <th>Mobile</th>
+                                <th>Consulting Doctor</th>
+                                <th>Date & Time</th>
+                                <th>Injury/Conditionr</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <td>APT0001</td>
+                                <td class="td-img">
+                                    <img src="../assets/images/avatar/avatar-3.jpg" alt="patient Img">
+                                    Jenish shah
+                                </td>
+                                <td>4444565756</td>
+                                <td class="td-img">
+                                    <img src="../assets/images/avatar/avatar-1.jpg" alt="patient Img">
+                                    Dr.Bernardo James
+                                </td>
+                                <td>
+                                    <p>26 November 2022</p>
+                                    <h6>12.00 PM - 12.15 PM</h6>
+                                </td>
+                                <td>Tooth Pain</td>
+                                <td><span class="Status-active-badge">Active</span></td>
+                                <td>
+                                    <a href="doctor-edit.html" class="edit-badge"><i class="fa-solid fa-pen"></i></a>
+                                    <a class="del-badge"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT0003</td>
+                                <td class="td-img">
+                                    <img src="../assets/images/avatar/avatar-3.jpg" alt="patient Img">
+                                    Jenish shah
+                                </td>
+                                <td>4444565756</td>
+                                <td class="td-img">
+                                    <img src="../assets/images/avatar/avatar-1.jpg" alt="patient Img">
+                                    Dr.Bernardo James
+                                </td>
+                                <td>
+                                    <p>26 November 2022</p>
+                                    <h6>12.00 PM - 12.15 PM</h6>
+                                </td>
+                                <td>Tooth Pain</td>
+                                <td><span class="Status-active-badge">Active</span></td>
+                                <td>
+                                    <a href="doctor-edit.html" class="edit-badge"><i class="fa-solid fa-pen"></i></a>
+                                    <a class="del-badge"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT0004</td>
+                                <td class="td-img">
+                                    <img src="../assets/images/avatar/avatar-3.jpg" alt="patient Img">
+                                    Jenish shah
+                                </td>
+                                <td>4444565756</td>
+                                <td class="td-img">
+                                    <img src="../assets/images/avatar/avatar-1.jpg" alt="patient Img">
+                                    Dr.Bernardo James
+                                </td>
+                                <td>
+                                    <p>26 November 2022</p>
+                                    <h6>12.00 PM - 12.15 PM</h6>
+                                </td>
+                                <td>Tooth Pain</td>
+                                <td><span class="Status-active-badge">Active</span></td>
+                                <td>
+                                    <a href="doctor-edit.html" class="edit-badge"><i class="fa-solid fa-pen"></i></a>
+                                    <a class="del-badge"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APT0005</td>
+                                <td class="td-img">
+                                    <img src="../assets/images/avatar/avatar-3.jpg" alt="patient Img">
+                                    Jenish shah
+                                </td>
+                                <td>4444565756</td>
+                                <td class="td-img">
+                                    <img src="../assets/images/avatar/avatar-1.jpg" alt="patient Img">
+                                    Dr.Bernardo James
+                                </td>
+                                <td>
+                                    <p>26 November 2022</p>
+                                    <h6>12.00 PM - 12.15 PM</h6>
+                                </td>
+                                <td>Tooth Pain</td>
+                                <td><span class="Status-active-badge">Active</span></td>
+                                <td>
+                                    <a href="doctor-edit.html" class="edit-badge"><i class="fa-solid fa-pen"></i></a>
+                                    <a class="del-badge"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__copyright">&copy; 2023 EM</div>
+            <div class="footer__signature">Made with love by pure genius</div>
+        </footer>
+    </div>
+
+    
+    <script>
+        // Navmenu
+        const menuIconEl = document.querySelector('.menu-icon');
+        const sidenavEl = document.querySelector('.sidenav');
+        const sidenavCloseEl = document.querySelector('.sidenav-close-icon');
+
+        menuIconEl.addEventListener('click', () => {
+            const sidenavEl = document.querySelector('.sidenav');
+            sidenavEl.classList.add("active");
+        });
+
+        sidenavCloseEl.addEventListener('click', () => {
+            const sidenavEl = document.querySelector('.sidenav');
+            sidenavEl.classList.remove("active");
+        });
+
+
+        // Dropdown
+        var dropdown = document.getElementsByClassName("dropdown");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+
+        dropdown[i].addEventListener("click", function() {
+
+            // this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+
+            });
+        }
+
+
+    // Search Bar
+    function seacrFunction() {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("table");
+    tr = table.getElementsByTagName("tr");
+
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[1];
+        if (td) {
+        txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+    }
+
+    </script>
+
+
+</body>
+</html>

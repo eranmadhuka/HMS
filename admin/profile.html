@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Main CSS File -->
+    <!-- <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">  -->
+
+    <!-- Admin CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fontawsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Grid Container -->
+    <div class="grid-container">
+        <header class="header">
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header_logo">
+                <img src="../assets/images/logo1.png" alt="">
+            </div>
+            <div class="header_avatar subnav">
+                <div class="subnav-btn">
+                    <img src="../assets/images/avatar/avatar-4.jpg" alt="">
+                    <h5>Avatar</h5>
+                </div>
+                <ul class="subnav-content">
+                    <li><a href="#"><i class="fa-solid fa-user"></i>My Profile</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i>Setting</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i>My Profile</a></li>
+                    <hr />
+                    <li class="logout"><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Log Out</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <aside class="sidenav">
+            <div class="sidenav-close-icon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <!-- Side Navigation -->
+            <div class="user-info">
+                <div class="user-info-bg">
+                    <img src="../assets/images/dash-bg.jpg" alt="">
+                </div>
+                <div class="user-info-box">
+                    <div class="user-info-pic">
+                        <img src="../assets/images/avatar/avatar-4.jpg" alt="">
+                    </div>
+                    <div class="user-info-title">
+                        <h3>Eran</h3>
+                        <span>Administrator</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="sidenav-list">
+                <li class="sidenav-item">
+                    <a href="dashboard.html" class="nav-links">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="sidenav-item">
+                    <div class="nav-links dropdown">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Appointment 
+                        <i class="fa-solid fa-caret-right down-icon"></i>
+                    </div>
+                    <ul class="dropdown-list">
+                        <li><a href="#">Book Appointment</a></li>
+                        <li><a href="#">View All Appointment</a></li>
+                        <li><a href="#">Edit Appointment</a></li>
+                    </ul>
+                </li>
+                <li class="sidenav-item">
+                    <div class="nav-links dropdown">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        Doctors 
+                        <i class="fa-solid fa-caret-right down-icon"></i>
+                    </div>
+         
+                    <ul class="dropdown-list">
+                        <li><a href="doctors.html">All Doctors</a></li>
+                        <li><a href="doctor-add.html">Add Doctort</a></li>
+                        <li><a href="doctor-edit.html">Edit Doctor</a></li>
+                    </ul>
+                </li>
+                <li class="sidenav-item">
+                    <div class="nav-links dropdown">
+                        <i class="fa-solid fa-hospital-user"></i>
+                        Patients 
+                        <i class="fa-solid fa-caret-right down-icon"></i>
+                    </div>
+                    <ul class="dropdown-list">
+                        <li><a href="patients.html">All Patients</a></li>
+                        <li><a href="patients-edit.html">Add Patients</a></li>
+                        <li><a href="patients-edit.html">Edit Patients</a></li>
+                    </ul>
+                </li>
+                <li class="sidenav-item">
+                    <div class="nav-links dropdown">
+                        <i class="fa-solid fa-users-gear"></i>
+                        Other Staf 
+                        <i class="fa-solid fa-caret-right down-icon"></i>
+                    </div>
+                    <ul class="dropdown-list">
+                        <li><a href="staff.html">All Staf</a></li>
+                        <li><a href="staff-add.html">Add Staf</a></li>
+                        <li><a href="staff-add.html">Edit Staf</a></li>
+                    </ul>
+                </li>
+                <li class="sidenav-item">
+                    <a href="#" class="nav-links">
+                        <i class="fa-solid fa-newspaper"></i>
+                        Blogs
+                    </a>
+                </li>
+                <li class="sidenav-item">
+                    <a href="#" class="nav-links active">
+                        <i class="fa-solid fa-user-gear"></i>
+                        Profile Setting
+                    </a>
+                </li>
+                <li class="sidenav-item logout">
+                    <a href="#" class="nav-links">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Log Out
+                    </a>
+                </li>
+            </ul>
+
+        </aside>
+
+        <main class="main">
+            <h2>My Profile</h2>
+
+            <div class="main-bottom-card">
+                <div class="card">
+                    <h3>Personal Information</h3>
+                     <div class="profile-card">
+                        <div class="profile-info">
+                            <div class="profile-info-left">
+                                <div class="profile-avatar">
+                                    <img src="../assets/images/avatar/avatar-4.jpg" alt="avatar">
+                                </div>
+                                <div class="profile-name">
+                                    <h3>Cristina Groves</h3>
+                                    <p>Gynecologist</p>
+                                </div>
+                            </div> 
+                            <div class="profile-info-right">
+                                <div class="profile-detail">
+                                    <h4>Phone:</h4>
+                                    <p>770-889-6484</p>
+                                </div>
+                                <div class="profile-detail">
+                                    <h4>Email:</h4>
+                                    <p>cristinagroves@example.com</p>
+                                </div>
+                                <div class="profile-detail">
+                                    <h4>Birthday:</h4>
+                                    <p>3rd March 1990</p>
+                                </div>
+                                <div class="profile-detail">
+                                    <h4>Address:</h4>
+                                    <p>714 Burwell Heights Road, Bridge City, TX, 77611</p>
+                                </div>
+                                <div class="profile-detail">
+                                    <h4>Gender:</h4>
+                                    <p>Female</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="main-bottom-card">
+                <div class="card">
+                    <h3>Edit Profile</h3>
+                    <div class="tabs">
+                        <div class="tabs-bar">
+                          <button class="tab-item tab-active" onclick="getTab(event,'about')">About</button>
+                          <button class="tab-item" onclick="getTab(event,'edit')">Edit</button>
+                          <button class="tab-item" onclick="getTab(event,'editPassword')">Password</button>
+                        </div>
+                        
+                        <div id="about" class="tab-content">
+                            <div class="profile-info-right" style="border: 0;">
+                                <div class="profile-detail">
+                                    <h4>First Name:</h4>
+                                    <p>Cristina</p>
+                                </div>
+                                <div class="profile-detail">
+                                    <h4>Last Name:</h4>
+                                    <p>Groves</p>
+                                </div>
+                                <div class="profile-detail">
+                                    <h4>Email:</h4>
+                                    <p>donaldniles@admin.com</p>
+                                </div>
+                                <div class="profile-detail">
+                                    <h4>Designation:</h4>
+                                    <p>Gynecologist</p>
+                                </div>
+                                <div class="profile-detail">
+                                    <h4>Gender:</h4>
+                                    <p>Female</p>
+                                </div>
+                                <div class="profile-detail">
+                                    <h4>Mobile No:</h4>
+                                    <p>305-310-5857</p>
+                                </div>
+                                <div class="profile-detail">
+                                    <h4>Birth Date:</h4>
+                                    <p>3rd March 1980</p>
+                                </div>
+                                <div class="profile-detail">
+                                    <h4>Address:</h4>
+                                    <p>714 Burwell Heights Road, Bridge City, TX, 77611</p>
+                                </div>
+                                <div class="profile-detail">
+                                    <h4>Education:</h4>
+                                    <p>714 Burwell Heights Road, Bridge City, TX, 77611</p>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div id="edit" class="tab-content" style="display:none">
+                            <div class="form-card">
+                                <h3>Basic Information</h3>
+                                 <form action="#">
+                                    <div class="form-body">
+                                        <div class="form-group">
+                                            <label for="avatar">Profile Picture</label>
+                                            <input type="file" name="avatar" id="avatar" class="custom">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="fName">First Nmae</label>
+                                            <input type="text" id="fName" placeholder="Enter first name" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lName">Last Nmae</label>
+                                            <input type="text" id="lName" placeholder="Enter last name" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" id="email" placeholder="Email Addres" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" id="password" placeholder="Password" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="rePassword">Confirm Password</label>
+                                            <input type="password" id="rePassword" placeholder="Reenter Password" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="designation">Designation</label>
+                                            <input type="text" id="designation" placeholder="Enter your designation" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="departments">Departments</label>
+                                            <select name="departments" id="" required>
+                                                <option>Select...</option>
+                                                <option value="catefory-1">Neurology</option>
+                                                <option value="catefory-2">Orthopedics</option>
+                                                <option value="catefory-3">Gynaecology</option>
+                                                <option value="catefory-4">Microbiology</option>
+                                                <option value="catefory-5">Radiotherapy</option>
+                                                <option value="catefory-6">Pharmacy</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="gender">Gender</label>
+                                            <select name="gender" id="" required>
+                                                <option>Select...</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="mobile">Mobile No.</label>
+                                            <input type="tel" id="mobile" placeholder="mobile Number" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="dob">Birth Date</label>
+                                            <input type="date" id="dob" placeholder="Select Date" class="form-control" required>
+                                        </div>
+                                        <div class="form-group textarea">
+                                            <label for="address">Address</label>
+                                            <textarea name="address" id="address" cols="30" rows="5" required></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="avatar">Profile Picture</label>
+                                            <input type="file" name="avatar" id="avatar" class="custom">
+                                        </div>
+                                        <div class="form-group textarea">
+                                            <label for="Education">Education</label>
+                                            <textarea name="Education" id="Education"  rows="5" placeholder="Address" required></textarea>
+                                        </div>
+                                        <div class="form-btn">
+                                            <button type="submit" value="submin" class="main-btn">Save Changes</button>
+                                            <!-- <button type="reset" value="submin" class="main-btn">Clear</button> -->
+                                        </div>
+                                    </div>
+                                 </form>
+                            </div>
+                        </div>
+                      
+                        <div id="editPassword" class="tab-content" style="display:none">
+                            <div class="form-card">
+                                <h3>Change Password</h3>
+                                 <form action="#">
+                                    <div class="form-body">
+                                        <div class="form-group">
+                                            <label for="oldPasswrd">Old Password</label>
+                                            <input type="password" id="oldPasswrd" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="newPassword">New Password</label>
+                                            <input type="password" id="newPassword" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="rePassword">Confirm Password</label>
+                                            <input type="password" id="rePassword" class="form-control" required>
+                                        </div>
+                                        <div class="form-btn">
+                                            <button type="submit" value="submin" class="main-btn">Save Changes</button>
+                                        </div>
+                                    </div>
+                                 </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__copyright">&copy; 2023 EM</div>
+            <div class="footer__signature">Made with love by pure genius</div>
+        </footer>
+    </div>
+
+    
+    <script>
+        const menuIconEl = document.querySelector('.menu-icon');
+        const sidenavEl = document.querySelector('.sidenav');
+        const sidenavCloseEl = document.querySelector('.sidenav-close-icon');
+
+        menuIconEl.addEventListener('click', () => {
+            const sidenavEl = document.querySelector('.sidenav');
+            sidenavEl.classList.add("active");
+        });
+
+        sidenavCloseEl.addEventListener('click', () => {
+            const sidenavEl = document.querySelector('.sidenav');
+            sidenavEl.classList.remove("active");
+        });
+
+
+
+
+
+        var dropdown = document.getElementsByClassName("dropdown");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+
+        dropdown[i].addEventListener("click", function() {
+
+            // this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+
+        });
+}
+
+    // Tabs
+        function getTab(evt, cityName) {
+
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab-content");
+
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tab-item");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
+        }
+
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " tab-active";
+        } 
+
+    </script>
+
+
+</body>
+</html>

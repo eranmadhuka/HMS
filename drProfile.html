@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCCARE</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Fontawsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="nav">
+        <div class="container">
+            <a href="index.html"><img class="navbar-brand" src="assets/images/logo1.png" alt="logo"></a>
+            <ul class="navbar" id="navbar">
+                <a href="index.html"><img class="navbar-brand mobile-nav-logo" src="assets/images/logo1.png" alt="logo"></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blogs.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <a href="login.html" class="main-btn">Login / Sign Up</a>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+            <div id="mobile">
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h2>Doctor Profile</h2>
+        <div class="path">
+            <h4><a href="index.html">Home &gt;</a> <a href="doctors.html">Doctors &gt;</a> Dr Name</h4>
+        </div>
+    </div> 
+
+    <!-- Back to top -->
+    <button type="button" id="top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Doctos -->
+    <section class="doctor-profile">
+        <div class="container">
+            <div class="border">
+                <div class="card about-card">
+                    <div class="dr-card-row">
+                        <div class="dr-about">
+                            <div class="card-img">
+                                <img src="assets/images/doctor-01.jpg" alt="">
+                            </div>
+                            
+                            <div class="dr-details">
+                                <h5>Anesthesiology</h5>
+                                <h4>Make Appointmnet <i class="fa-solid fa-circle-check"></i></h4>
+                                <p>Ph.D, DPT, MS OMPT</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span> (15)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doc-details">
+                            <ul>
+                                <li>
+                                    <p><i class="fa-solid fa-location-dot"></i> Colombo</p>
+                                </li>
+                                <li>
+                                    <p><i class="fa-solid fa-clock"></i> Available On Mon-Fri</p>
+                                </li>
+                                <li>
+                                    <p><i class="fa-solid fa-money-check-dollar"></i> $100-$400</p>
+                                </li>
+                            </ul>
+                            
+                            <a href="#" class="main-btn">BOOK APPOINTMENT</a>
+                        </div>
+                    </div>
+                    <button class="category-btn">Dental Fillings</button>
+                    <button class="category-btn">Dental Fillings</button>
+                    <button class="category-btn">Dental Fillings</button>
+                    <button class="category-btn">Dental Fillings</button>
+                     <!-- About Tabs -->
+                    <div class="tabs">
+                        <div class="tabs-bar">
+                        <button class="tab-item tab-active" onclick="getTab(event,'overview')">Overview</button>
+                        <button class="tab-item" onclick="getTab(event,'locations')">Locations</button>
+                        <button class="tab-item" onclick="getTab(event,'articles')">Articles</button>
+                        </div>
+                        
+                        <div id="overview" class="tab-content">
+                            <h3>About Me</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            
+                            <h3>Education</h3>
+                            <ul class="about-list">
+                                <li>
+                                    American Dental Medical University
+                                    <p>BDS</p>
+                                    <p>1998 - 2003</p>
+                                </li>
+                                <li>
+                                    American Dental Medical University
+                                    <p>BDS</p>
+                                    <p>1998 - 2003</p>
+                                </li>
+                            </ul>
+
+                            <h3>Work & Experience</h3>
+                            <ul class="about-list">
+                                <li>
+                                    Glowing Smiles Family Dental Clinic
+                                    <p>2010 - Present (5 years)</p>
+                                </li>
+                                <li>
+                                    Comfort Care Dental Clinic
+                                    <p>2007 - 2010 (3 years)</p>
+                                </li>
+                                <li>
+                                    Dream Smile Dental Practice
+                                    <p>2005 - 2007 (2 years)</p>
+                                </li>
+                            </ul>
+
+                            <h3>Awards</h3>
+                            <ul class="about-list">
+                                <li>
+                                    <h4>July 2019</h4>
+                                    Humanitarian Award
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>March 2011</h4>
+                                    Certificate for International Volunteer Service
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>May 2008</h4>
+                                    The Dental Professional of The Year Award
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <h3>Services</h3>
+                            <ul class="ser-list">
+                                <li><p><i class="fa-solid fa-arrow-right"></i> Tooth cleaning</p></li>
+                                <li><p><i class="fa-solid fa-arrow-right"></i> Root Canal Therapy</p></li>
+                                <li><p><i class="fa-solid fa-arrow-right"></i> Implants</p></li>
+                                <li><p><i class="fa-solid fa-arrow-right"></i> Surgical Extractions</p></li>
+                                <li><p><i class="fa-solid fa-arrow-right"></i> Fissure Sealants</p></li>
+                            </ul>
+                        </div>
+                    
+                        <div id="locations" class="tab-content" style="display:none">
+                        <h3>Location</h3>
+                        <p>Paris is the capital of France.</p> 
+                        </div>
+                    
+                        <div id="articles" class="tab-content" style="display:none">
+                        <h3>Articles</h3>
+                        <div class="container">
+                            
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="grid">
+                <div class="footer-col">
+                    <a href="index.html"><img class="navbar-brand" src="assets/images/logo2.png" alt="logo"></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="tel">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <div>
+                            <p>Contact Us</p>
+                            <h4>+94 112 345 678</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Booking</a></li>
+                        <li><a href="#">Faq’s</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Our Teams</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Service</h4>
+                    <ul>
+                        <li><a href="#">Dental Care</a></li>
+                        <li><a href="#">Cardiac Clinic</a></li>
+                        <li><a href="#">Massege Therapy</a></li>
+                        <li><a href="#">Cardiology</a></li>
+                        <li><a href="#">Precise Diagnosis</a></li>
+                        <li><a href="#">Abmbulance Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Subcribe</h4>
+                    <form action="">
+                        <input type="email" placeholder="Email Address"><br>
+                        <button class="main-btn">Subscribe Now</button>
+                    </form>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="footer-bottom">
+                <p>Copyright © 2023 Design & Developed by Eran Madhuka</p>
+                <p><a href="#">Terms and Conditions</a> <span> | </span> <a href="#">Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        function getTab(evt, cityName) {
+
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab-content");
+
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tab-item");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
+        }
+
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " tab-active";
+        }
+
+         
+    </script>
+
+    
+
+    
+</body>
+</html>

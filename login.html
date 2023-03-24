@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCCARE</title>
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Fontawsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="nav">
+        <div class="container">
+            <a href="index.html"><img class="navbar-brand" src="assets/images/logo1.png" alt="logo"></a>
+            <ul class="navbar" id="navbar">
+                <a href="index.html"><img class="navbar-brand mobile-nav-logo" src="assets/images/logo1.png" alt="logo"></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blogs.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <a href="register.html" class="main-btn">Sign Up</a>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+            <div id="mobile">
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back to top -->
+    <button type="button" id="top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Register Form Section -->
+    <section class="signup">
+        <div class="container">
+            <div class="login-wrapper">
+                <div class="login-img">
+                    <img src="assets/images/sign.png" alt="">
+                </div>
+                <form action="#" class="form-style">
+                    <input type="text" name="userName" id="userName" class="field" placeholder="Username">
+                    <input type="password" name="password" id="password" class="field" placeholder="password">
+
+                    <div class="row">
+                        <div class="terms">
+                            <div class="row">
+                                <input type="checkbox" name="terms" id="terms">
+                                <label for="terms"> 
+                                    <p>Remember Me</p>
+                                </label>
+                            </div>
+                        </div>
+                       <a href="#"><p>Forgot Password ?</p></a>
+
+                    </div>
+                    <button type="submit" class="main-btn">Login</button>
+                </form>
+
+                <hr />
+
+                <p>Already Have an Account? <a href="register.html"> Register</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="grid">
+                <div class="footer-col">
+                    <a href="index.html"><img class="navbar-brand" src="assets/images/logo2.png" alt="logo"></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="tel">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <div>
+                            <p>Contact Us</p>
+                            <h4>+94 112 345 678</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Booking</a></li>
+                        <li><a href="#">Faq’s</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Our Teams</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Service</h4>
+                    <ul>
+                        <li><a href="#">Dental Care</a></li>
+                        <li><a href="#">Cardiac Clinic</a></li>
+                        <li><a href="#">Massege Therapy</a></li>
+                        <li><a href="#">Cardiology</a></li>
+                        <li><a href="#">Precise Diagnosis</a></li>
+                        <li><a href="#">Abmbulance Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Subcribe</h4>
+                    <form action="">
+                        <input type="email" placeholder="Email Address"><br>
+                        <button class="main-btn">Subscribe Now</button>
+                    </form>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="footer-bottom">
+                <p>Copyright © 2023 Design & Developed by Eran Madhuka</p>
+                <p><a href="#">Terms and Conditions</a> <span> | </span> <a href="#">Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
